@@ -1,1 +1,132 @@
 /* Write your CSS here */
+.productDetails-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+
+@media Screen and (min-width: 768px) {
+  .productDetails-container {
+    flex-direction: row;
+  }
+}
+
+.details-container {
+  max-width: 600px;
+}
+
+.ProductImage {
+  width: 500px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.ProductTitle {
+  font-family: 'Roboto';
+  font-size: 40px;
+  width: 400px;
+  color: #12022f;
+}
+.rating-review-container {
+  display: flex;
+  align-items: center;
+}
+.rating-container {
+  display: flex;
+  align-items: center;
+  background-color: #3b82f6;
+  color: #ffffff;
+  height: 25px;
+  width: 70px;
+  margin-right: 30px;
+}
+.star {
+  width: 20px;
+  margin-left: 5px;
+}
+.description {
+  font-family: 'Roboto';
+  color: #616e7c;
+}
+.available {
+  font-family: 'Roboto';
+  color: #616e7c;
+}
+span {
+  font-weight: bold;
+  color: black;
+}
+.line {
+  border: 1px solid #cbced2;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+}
+.decrease-button {
+  background-color: transparent;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.increase-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.count {
+  margin-right: 20px;
+}
+.button {
+  color: #ffffff;
+  background-color: #3b82f6;
+  border: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 5px;
+}
+.similarProducts-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+}
+.similar-products-list-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+@media Screen and (min-width: 768px) {
+  .similar-products-list-container {
+    flex-direction: row;
+  }
+  .similarProducts-container {
+    margin-left: 190px;
+  }
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+.error-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+.error-view {
+  width: 500px;
+}
+.shopping-button {
+  color: #ffffff;
+  background-color: #3b82f6;
+  height: 35px;
+  width: 150px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
